@@ -1,0 +1,7 @@
+for _ in range(int(input())):
+    n=int(input())
+    st=input()
+    if st.count("...") >0:
+        print("2")
+    else:
+        print(st.count("."))
