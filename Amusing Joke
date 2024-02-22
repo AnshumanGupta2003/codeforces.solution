@@ -1,0 +1,15 @@
+a = input()
+b = input()
+c = input()
+a =a+b
+d, e = [], []
+if len(c) != len(a) :
+    print("NO")
+    exit()
+for i in range(len(c)):
+    d.append(a[i])
+    e.append(c[i])
+
+d.sort()
+e.sort()
+print("YES" if d == e else "NO")
