@@ -1,0 +1,19 @@
+x=[]
+y=[]
+z=[]
+f=int(input())
+for i in range(f):
+    a,b,c=map(int,input().split())
+    x.append(a)
+    y.append(b)
+    z.append(c)
+a=b=c=0
+for i in range(f):
+    a=x[i]+a
+    b=y[i]+b
+    c=z[i]+c
+
+if a==0 and b==0 and c==0:
+    print("YES")
+else:
+    print("NO")
