@@ -1,0 +1,3 @@
+n=list(map(int,input().split()))
+m=list(set(n))
+print(len(n)-len(m))
