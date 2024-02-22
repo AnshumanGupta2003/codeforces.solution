@@ -1,0 +1,8 @@
+n = int(input())
+a = [input().split() for _ in range(n)]
+m=0
+for i in range(n):
+    for j in range(n):
+        if a[i][1] == a[j][0]:
+            m += 1
+print(m)
