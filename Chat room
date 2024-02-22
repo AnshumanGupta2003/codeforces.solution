@@ -1,0 +1,43 @@
+n=input()
+i=0
+z=0
+
+while z<1:
+    if i>len(n)-1:
+        break
+    if n[i]=="h":
+        z+=1
+    i+=1
+
+while z<2:
+    if i>len(n)-1:
+        break
+    if n[i]=="e":
+        z+=1
+    i+=1
+
+while z<3:
+    if i>len(n)-1:
+        break
+    if n[i]=="l":
+        z+=1
+    i+=1
+
+while z<4:
+    if i>len(n)-1:
+        break
+    if n[i]=="l":
+        z+=1
+    i+=1
+
+while z<5:
+    if i>len(n)-1:
+        break
+    if n[i]=="o":
+        z+=1
+    i+=1
+
+if z==5:
+    print("YES")
+else:
+    print("NO")
