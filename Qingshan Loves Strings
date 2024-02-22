@@ -1,0 +1,22 @@
+for _ in range(int(input())):
+    n,m=map(int,input().split())
+    a=input()
+    b=input()
+    if a.__contains__("11") and a.__contains__("00"):
+        print("No")
+    elif a.__contains__("11"):
+        if b.__contains__("11") or b.__contains__("00"):
+            print("No")
+        elif b.startswith("0") and b.endswith("0"):
+            print("Yes")
+        else:
+            print("No")
+    elif a.__contains__("00"):
+        if b.__contains__("11") or b.__contains__("00"):
+            print("No")
+        elif b.startswith("1") and b.endswith("1"):
+            print("Yes")
+        else:
+            print("No")
+    else:
+        print("Yes")
