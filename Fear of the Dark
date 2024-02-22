@@ -1,0 +1,25 @@
+import math as mt
+for _ in range(int(input())):
+    p = list(map(int, input().split()))
+    a = list(map(int, input().split(" ")))
+    b = list(map(int, input().split(" ")))
+    o = [0, 0]
+    oa = mt.sqrt((o[0] - a[0]) ** 2 + (o[1] - a[1]) ** 2)
+    ob = mt.sqrt((o[0] - b[0]) ** 2 + (o[1] - b[1]) ** 2)
+    pa = mt.sqrt((p[0] - a[0]) ** 2 + (p[1] - a[1]) ** 2)
+    pb = mt.sqrt((p[0] - b[0]) ** 2 + (p[1] - b[1]) ** 2)
+    ab = mt.sqrt((a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2)
+    
+    if ob>pa and ob>oa and pb>pa and pb>oa:
+        print(oa if oa>pa else pa)
+    elif oa>ob and oa>pb and pa>ob and pa>pb:
+        print(ob if ob>pb else pb)
+    elif oa<ab/2 and pb<ab/2:
+        print(ab/2)
+    elif ob<ab/2 and pa<ab/2:
+        print(ab/2)
+    else :
+        low1=min(pa,pb)
+        low2=min(oa,ob)
+        ans=max(low1,low2)
+        print(ans)
