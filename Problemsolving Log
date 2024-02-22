@@ -1,0 +1,8 @@
+for _ in range(int(input())):
+    n = int(input())
+    a = input()
+    m = 0
+    for i in range(26):
+        if a.count(chr(ord('A')+i)) > ord('A')-65+i:
+            m += 1
+    print(m)
