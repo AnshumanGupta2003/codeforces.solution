@@ -1,0 +1,12 @@
+for _ in range(int(input())):
+    n = int(input())
+    a = input()
+    c = []
+    k = ""
+    a = a.replace("ba", ".ba")
+    a = a.replace("ca", ".ca")
+    a = a.replace("da", ".da")
+    a = a.replace("be", ".be")
+    a = a.replace("ce", ".ce")
+    a = a.replace("de", ".de")
+    print(a[1:len(a)])
