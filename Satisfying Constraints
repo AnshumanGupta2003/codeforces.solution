@@ -1,0 +1,19 @@
+for _ in range(int(input())):
+    n = int(input())
+    k = 0
+    l = 100000000000000000000000000000000000000000000000000000
+    m = []
+    for i in range(n):
+        a, b = map(int, input().split())
+        if a == 1:
+            k = max(k, b)
+        elif a == 2:
+            l = min(l, b)
+        else:
+            m.append(b)
+    count = 0
+    for i in range(len(m)):
+        if k <= m[i] <= l:
+            count += 1
+    print(max(l-k-count+1, 0))
+    
