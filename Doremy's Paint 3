@@ -1,0 +1,12 @@
+for _ in range(int(input())):
+    n = int(input())
+    a = list(map(int, input().split()))
+    m = list(set(a))
+    if len(m) > 2:
+        print("No")
+    elif len(m) == 1:
+        print("Yes")
+    elif -2 < a.count(m[0]) - a.count(m[1]) < 2:
+        print("Yes")
+    else:
+        print("No")
