@@ -1,0 +1,9 @@
+for _ in range(int(input())):
+    a, b = map(int, input().split())
+    seq = ""
+    for i in range(b):
+        seq += chr(ord('a')+i)
+    res = seq
+    for j in range(a-1):
+        res += seq
+    print(res)
