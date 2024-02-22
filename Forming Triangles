@@ -1,0 +1,33 @@
+import math
+for _ in range(int(input())):
+    n = int(input())
+    a = list(map(int, input().split()))
+    se = list(set(a))
+    li3 = []
+    a.sort()
+    w, j = 0, 0
+    count2 = 0
+    li, li2 = [], []
+    for i in range(len(se)):
+        count = 0
+        while True:
+            if j == n:
+                li.append(count)
+                li2.append(count2)
+                break
+            if se[i] == a[j]:
+                count += 1
+                count2 += 1
+                j += 1
+            else:
+                li2.append(count2)
+                li.append(count)
+                break
+    res = 0
+    for i in range(len(li)):
+        if i == 0:
+            if li[i] > 2:
+                res = math.comb(li[i], 3)
+        elif li[i] > 1:
+            res += ((math.comb(li[i], 2))*li2[i-1])+math.comb(li[i], 3)
+    print(res)
