@@ -1,0 +1,22 @@
+n=int(input())
+a=input()
+a=a.split()
+odd=0
+even=0
+for i in range(n):
+    a[i]=int(a[i])
+for i in range(n):
+    if a[i]%2==0:
+        even+=1
+    else:
+        odd+=1
+
+i=0
+z=[]
+if even==1:
+    while a[i]%2==1:
+        i+=1
+else :
+    while a[i]%2==0:
+        i+=1
+print(i+1)
