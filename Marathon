@@ -1,0 +1,8 @@
+for _ in range(int(input())):
+    a = list(map(int, input().split()))
+    m = 0
+    for i in range(1, 4):
+        if a[0] <a[i]:
+            m += 1
+    print(m)
+    
