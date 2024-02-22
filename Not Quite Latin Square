@@ -1,0 +1,25 @@
+for _ in range(int(input())):
+    a = input()
+    b = input()
+    c = input()
+    if a.__contains__('?'):
+        if not a.__contains__('A'):
+            print('A')
+        if not a.__contains__('B'):
+            print('B')
+        if not a.__contains__('C'):
+            print('C')
+    if b.__contains__('?'):
+        if not b.__contains__('A'):
+            print('A')
+        if not b.__contains__('B'):
+            print('B')
+        if not b.__contains__('C'):
+            print('C')
+    if c.__contains__('?'):
+        if not c.__contains__('A'):
+            print('A')
+        if not c.__contains__('B'):
+            print('B')
+        if not c.__contains__('C'):
+            print('C')
