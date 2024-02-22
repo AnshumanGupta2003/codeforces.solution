@@ -1,0 +1,12 @@
+for _ in range(int(input())):
+    n = int(input())
+    a = list(map(int, input().split()))
+    neg_count = len(list(filter(lambda x: (x < 0), a)))
+    if a.__contains__(0) or neg_count % 2 == 1:
+        print("0")
+    else:
+        print("1")
+        #if neg_count % 2 == 0:
+        print("1 0")
+        #else:
+        #    print()
