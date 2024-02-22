@@ -1,0 +1,13 @@
+import math
+for _ in range(int(input())):
+    n, m = map(int, input().split())
+    a = list(map(int, input().split()))
+    k = 2023/math.prod(a)
+    if k == int(k):
+        j = str(int(k))
+        for i in range(m-1):
+            j += " 1"
+        print("YES")
+        print(j)
+    else:
+        print("NO")
