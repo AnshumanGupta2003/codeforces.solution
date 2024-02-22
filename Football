@@ -1,0 +1,2 @@
+a=input()
+print("YES" if a.__contains__("0000000") or a.__contains__("1111111") else "NO" )
