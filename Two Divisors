@@ -1,0 +1,5 @@
+import math
+for _ in range(int(input())):
+    b, a = map(int, input().split())
+    print(a*b//math.gcd(a, b) if a % b else a*a//b)
+    
