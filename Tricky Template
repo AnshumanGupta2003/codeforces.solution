@@ -1,0 +1,13 @@
+for _ in range(int(input())):
+    n = int(input())
+    a = input()
+    b = input()
+    c = input()
+    flag = True
+    for i in range(n):
+        if a[i] != c[i] and b[i] != c[i]:
+            print("YES")
+            flag = False
+            break
+    if flag:
+        print("NO")
